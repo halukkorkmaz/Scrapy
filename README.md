@@ -17,11 +17,11 @@ title —> “The world as we have created it is a process of our thinking. It c
 4. `author = first_quote_div.css(“small.author::text”).extract_first()`
 author —> “Albert Einstein”
 
-5. `for quote in content: 
-    ...:     text = quote.css("span.text::text").extract_first() 
-    ...:     author = quote.css("small.author::text").extract_first() 
-    ...:     tags = quote.css("div.tags a.tag::text").extract() 
-    ...:     print(dict(text=text, author=author, tags=tags))`
+5. `for quote in content:`
+   `...:     text = quote.css("span.text::text").extract_first()` 
+   `...:     author = quote.css("small.author::text").extract_first()`
+   `...:     tags = quote.css("div.tags a.tag::text").extract()`
+   `...:     print(dict(text=text, author=author, tags=tags))`
     
 
 
